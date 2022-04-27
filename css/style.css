@@ -1,0 +1,69 @@
+
+section img{
+ width:  100%; 
+ background-repeat: no-repeat;
+ background-size: cover;
+}
+.y img{
+  width: 450px;
+  border-radius: 75px;
+  border-style: solid;
+  border-color: plum;
+  border-width: 10px;
+}
+.k img{
+  width:450px ;
+border-radius: 75px;
+border-style: solid;
+border-width: 10px;
+border-color: darkcyan;
+}
+footer{
+  background-color: black;
+}
+h2{
+color: whitesmoke;
+font-weight: bold;
+text-align: center;
+}
+p{
+  color: whitesmoke;
+}
+
+h2{
+   color: black;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight:bolder ;
+  font-size: 40px;
+  background-color: ;
+}
+.st img{
+  width: 400px;
+} 
+.bl img{
+  width: 400px;
+}
+.bu img{
+  width: 400px;
+  height: 300px;
+  border: 15px;
+}
+img{
+  width: 100%;
+
+}
+.ko li a{
+  color: black;
+  font-weight: bold;
+  font-size: medium;
+}
+.m{
+  color: whitesmoke;
+}
+.l{
+  background-color: teal;
+}
+.rt {
+background-repeat: no-repeat;
+background-size: cover;
+}

@@ -1,0 +1,456 @@
+var content = [
+  {
+    id: 'en-gb',
+    code: 'en-gb',
+    directory: 'uk',
+    title: 'UK English',
+    aboutDK: {
+      url: 'http://www.dk.com/information/about-dk/',
+      title: 'About DK'
+    },
+    DKImages: {
+      url: 'https://www.dkimages.com/',
+      title: 'DK Images'
+    },
+    dialog: [
+      {
+        name: 'example-dialog',
+        title: 'Example question?',
+        description: '',
+        buttons: [
+          {
+            title: 'Cancel &rsaquo;',
+            type: 1,
+            url: 'javascript:;',
+            destination: true
+          }
+        ]
+      }
+    ],
+    meta: [
+      {
+        name: 'not-found',
+        title: 'Page not found',
+        description: ''
+      },
+      {
+        name: 'home',
+        title:
+          'DK Find Out! | Fun Facts for Kids on Animals, Earth, History and more!',
+        description:
+          'Visit DK Find Out! to learn about dinosaurs, space, animals, nature &amp; more. Fun learning activities for kids with videos, quizzes & galleries at DKFindOut.com'
+      },
+      {
+        name: 'discover',
+        title: 'Discover | DK Find Out!',
+        description: 'Discover all the subjects on DK Find Out'
+      },
+      {
+        name: 'explore',
+        title: 'Explore | DK Find Out!',
+        description: ''
+      },
+      {
+        name: 'hub_quizzes',
+        title: 'Free Fun Quizzes for Kids | DK Find Out!',
+        description:
+          'Play to learn quizzes from DK Find Out! Try to beat your best time with these free online Quizzes for Kids covering History, Animals, Space and more!'
+      },
+      {
+        name: 'hub_videos',
+        title: 'Educational Videos for Kids | School Videos | DK Find Out!',
+        description:
+          'Watch and learn video resources for kids covering a wide range of educational topics from Science Videos to History Videos and Dinosaur Videos to Space Videos'
+      },
+      {
+        name: 'hub_books',
+        title:
+          'DK Find Out! | Fun Facts for Kids on Animals, Earth, History and more!',
+        description:
+          'Visit DK Find Out! to learn about dinosaurs, space, animals, nature & more. Fun learning activities for kids with videos, quizzes & galleries at DKFindOut.com'
+      }
+    ],
+    staticMessaging: [
+      {
+        name: 'homeIntro',
+        description: 'This is the intro copy on the homepage',
+        copy: 'What do you want to find out?'
+      },
+      {
+        name: 'homeSubjects',
+        description: 'Header for subjects on HP',
+        copy:
+          "What&#8217;s in <span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />"
+      },
+      {
+        name: 'homeStatics',
+        description: 'Header for parents/teachers on HP',
+        copy:
+          "There&#8217;s more to <span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />"
+      },
+      {
+        name: 'copyright',
+        description: 'This is the footer legal information',
+        copy:
+          "Dorling Kindersley Limited. Registered Number 01177822 England. Registered Office: One Embassy Gardens, 8 Viaduct Gardens, London SW11 7BW.<br/>'Dorling Kindersley', 'DK', 'Eyewitness' and the open book logo <img src='https://res.cloudinary.com/dk-find-out/image/upload/h_20,w_20,f_auto/icons/dk-logo.svg' alt='DK Books' style='vertical-align: middle;'> are trade marks of Dorling Kindersley Limited."
+      },
+      {
+        name: 'privateBrowsing',
+        description: 'Message if private browsing turned on',
+        copy:
+          "Sorry, you'll need to turn off Private Browsing in your browser's settings to access DK Findout!"
+      },
+      {
+        name: 'introExpand',
+        description:
+          'This is the expand call to action for an articles intro copy',
+        copy: 'Read more &rsaquo;'
+      },
+      {
+        name: 'relatedExpand',
+        description:
+          'This is the expand call to action for related pages bullets',
+        copy: 'Find out more &rsaquo;'
+      },
+      {
+        name: 'relatedClose',
+        description:
+          'This is the close call to action for related pages bullets',
+        copy: 'Find out more ^'
+      },
+      {
+        name: 'introClose',
+        description:
+          'This is the close call to action for an articles intro copy',
+        copy: 'Close ^'
+      },
+      {
+        name: 'searchPlaceholder',
+        description: 'Search field placeholder text',
+        copy: 'I want to find out about...'
+      },
+      {
+        name: 'videoError',
+        description: 'Error message if cant connect to YouTube',
+        copy:
+          "Sorry, can't connect to Youtube.<br/><br/>It's possible your school is blocking access to it, or maybe you've lost your internet connection.<br/><br/>You might be able to see this video if you try again from home."
+      },
+      {
+        name: 'searchError',
+        description: 'Error message shown if attempt to search without keyword',
+        copy: 'Please enter a keyword to search for'
+      },
+      {
+        name: 'searchErrorSubject',
+        description:
+          'Error message shown if attempt to search without choosing subject',
+        copy: 'Please choose a subject to search in'
+      },
+      {
+        name: 'videoSupport',
+        description: 'Error message if browser not supported by YouTube',
+        copy:
+          "Sorry, this browser isnt supported by Youtube. You'll need to upgrade your browser to see this video."
+      },
+      {
+        name: 'audioSupport',
+        description: 'Error message if browser doesnt support HTML5 audio',
+        copy: "Sorry, this browser can't play sound, please upgrade"
+      },
+      {
+        name: 'cookiesMessage',
+        description: 'Cookie messaging on first site visit',
+        copy:
+          'This site uses cookies and by continuing to browse it you are agreeing to our use of cookies.'
+      },
+      {
+        name: 'cookiesLink',
+        description: 'Cookie link on first site visit',
+        copy: 'Read our cookies policy'
+      },
+      {
+        name: 'languageHeader',
+        description: 'Header on select language view',
+        copy: 'Select language'
+      },
+      {
+        name: 'languageMessage',
+        description: 'Message on select language view',
+        copy:
+          'You can change your selected language at anytime from the site header'
+      },
+      {
+        name: 'welcomeHeader',
+        description: 'Welcome message on select language view',
+        copy: "Welcome to <span class='logo'>DK Find Out!</span>"
+      },
+      {
+        name: 'alertFormHeader',
+        description: 'Header to alert form on homepage',
+        copy:
+          "<span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />Education Newsletter"
+      },
+      {
+        name: 'alertFormDesc',
+        description: 'Intro text to alert form on homepage',
+        copy:
+          'Sign up now for the free DKfindout! education email and be the first to hear about new content, DK&rsquo;s latest books, and exciting competitions and give aways.'
+      },
+      {
+        name: 'bookBannerHeadingMobile',
+        description: 'Book banner heading on mobile',
+        copy: 'DK BOOKS'
+      },
+      {
+        name: 'bookBannerHeadingDesktop',
+        description: 'Book banner heading on desktop',
+        copy: 'FIND OUT EVEN MORE WITH THESE DK BOOKS'
+      }
+    ],
+    menuLinks: [
+      {
+        name: 'Kids Club',
+        url: 'kids-club'
+      },
+      {
+        name: 'Parents',
+        url: 'parents'
+      },
+      {
+        name: 'Teachers',
+        url: 'teachers'
+      },
+      {
+        name: 'News',
+        url: 'news'
+      }
+    ]
+  },
+  {
+    id: 'en',
+    code: 'en-us',
+    directory: 'us',
+    title: 'US English',
+    aboutDK: {
+      url: 'http://www.dk.com/information/about-dk/',
+      title: 'About DK'
+    },
+    DKImages: {
+      url: 'https://www.dkimages.com/',
+      title: 'DK Images'
+    },
+    dialog: [
+      {
+        name: 'example-dialog',
+        title: 'Example question?',
+        description: '',
+        buttons: [
+          {
+            title: 'Cancel &rsaquo;',
+            type: 1,
+            url: 'javascript:;',
+            destination: true
+          }
+        ]
+      }
+    ],
+    meta: [
+      {
+        name: 'not-found',
+        title: 'Page not found',
+        description: ''
+      },
+      {
+        name: 'home',
+        title:
+          'DK Find Out! | Fun Facts for Kids on Animals, Earth, History and more!',
+        description:
+          'Visit DK Find Out! to learn about dinosaurs, space, animals, nature &amp; more. Fun learning activities for kids with videos, quizzes & galleries at DKFindOut.com'
+      },
+      {
+        name: 'discover',
+        title: 'Discover | DK Find Out!',
+        description: 'Discover all the subjects on DK Find Out'
+      },
+      {
+        name: 'explore',
+        title: 'Explore | DK Find Out!',
+        description: ''
+      },
+      {
+        name: 'hub_quizzes',
+        title: 'Free Fun Quizzes for Kids | DK Find Out!',
+        description:
+          'Play to learn quizzes from DK Find Out! Try to beat your best time with these free online Quizzes for Kids covering History, Animals, Space and more!'
+      },
+      {
+        name: 'hub_videos',
+        title: 'Educational Videos for Kids | School Videos | DK Find Out!',
+        description:
+          'Watch and learn video resources for kids covering a wide range of educational topics from Science Videos to History Videos and Dinosaur Videos to Space Videos.'
+      },
+      {
+        name: 'hub_books',
+        title:
+          'DK Find Out! | Fun Facts for Kids on Animals, Earth, History and more!',
+        description:
+          'Visit DK Find Out! to learn about dinosaurs, space, animals, nature & more. Fun learning activities for kids with videos, quizzes & galleries at DKFindOut.com'
+      }
+    ],
+    staticMessaging: [
+      {
+        name: 'homeIntro',
+        description: 'This is the intro copy on the homepage',
+        copy: 'What do you want to find out?'
+      },
+      {
+        name: 'homeSubjects',
+        description: 'Header for subjects on HP',
+        copy:
+          "What&#8217;s in <span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />"
+      },
+      {
+        name: 'homeStatics',
+        description: 'Header for parents/teachers on HP',
+        copy:
+          "There&#8217;s more to <span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />"
+      },
+      {
+        name: 'copyright',
+        description: 'This is the footer legal information',
+        copy:
+          "Dorling Kindersley Limited. Registered Number 01177822 England. Registered Office: 80 Strand, London, WC2R 0RL.<br/>'Dorling Kindersley', 'DK', 'Eyewitness' and the open book logo <img src='https://res.cloudinary.com/dk-find-out/image/upload/h_20,w_20,f_auto/icons/dk-logo.svg' alt='DK Books' style='vertical-align: middle;'> are trade marks of Dorling Kindersley Limited."
+      },
+      {
+        name: 'privateBrowsing',
+        description: 'Message if private browsing turned on',
+        copy:
+          "Sorry, you'll need to turn off Private Browsing in your browser's settings to access DK Findout!"
+      },
+      {
+        name: 'introExpand',
+        description:
+          'This is the expand call to action for an articles intro copy',
+        copy: 'Read more &rsaquo;'
+      },
+      {
+        name: 'relatedExpand',
+        description:
+          'This is the expand call to action for related pages bullets',
+        copy: 'Find out more &rsaquo;'
+      },
+      {
+        name: 'relatedClose',
+        description:
+          'This is the close call to action for related pages bullets',
+        copy: 'Find out more ^'
+      },
+      {
+        name: 'introClose',
+        description:
+          'This is the close call to action for an articles intro copy',
+        copy: 'Close ^'
+      },
+      {
+        name: 'searchPlaceholder',
+        description: 'Search field placeholder text',
+        copy: 'I want to find out about...'
+      },
+      {
+        name: 'videoError',
+        description: 'Error message if cant connect to YouTube',
+        copy:
+          "Sorry, can't connect to Youtube.<br/><br/>It's possible your school is blocking access to it, or maybe you've lost your internet connection.<br/><br/>You might be able to see this video if you try again from home."
+      },
+      {
+        name: 'searchError',
+        description: 'Error message shown if attempt to search without keyword',
+        copy: 'Please enter a keyword to search for'
+      },
+      {
+        name: 'searchErrorSubject',
+        description:
+          'Error message shown if attempt to search without choosing subject',
+        copy: 'Please choose a subject to search in'
+      },
+      {
+        name: 'videoSupport',
+        description: 'Error message if browser not supported by YouTube',
+        copy:
+          "Sorry, this browser isnt supported by Youtube. You'll need to upgrade your browser to see this video."
+      },
+      {
+        name: 'audioSupport',
+        description: 'Error message if browser doesnt support HTML5 audio',
+        copy: "Sorry, this browser can't play sound, please upgrade"
+      },
+      {
+        name: 'cookiesMessage',
+        description: 'Cookie messaging on first site visit',
+        copy:
+          'This site uses cookies and by continuing to browse it you are agreeing to our use of cookies.'
+      },
+      {
+        name: 'cookiesLink',
+        description: 'Cookie link on first site visit',
+        copy: 'Read our cookies policy'
+      },
+      {
+        name: 'languageHeader',
+        description: 'Header on select language view',
+        copy: 'Select language'
+      },
+      {
+        name: 'languageMessage',
+        description: 'Message on select language view',
+        copy:
+          'You can change your selected language at anytime from the site header'
+      },
+      {
+        name: 'welcomeHeader',
+        description: 'Welcome message on select language view',
+        copy: "Welcome to <span class='logo'>DK Find Out!</span>"
+      },
+      {
+        name: 'alertFormHeader',
+        description: 'Header to alert form on homepage',
+        copy:
+          "<span class='hide'>DKFindOut!</span><img src='/images/ie/logo.png' alt='' role='presentation' />Education Newsletter"
+      },
+      {
+        name: 'alertFormDesc',
+        description: 'Intro text to alert form on homepage',
+        copy:
+          'Sign up now for the free DKfindout! education email and be the first to hear about new content, DK&rsquo;s latest books, and exciting competitions and give aways.'
+      },
+      {
+        name: 'bookBannerHeadingMobile',
+        description: 'Book banner heading on mobile',
+        copy: 'DK BOOKS'
+      },
+      {
+        name: 'bookBannerHeadingDesktop',
+        description: 'Book banner heading on desktop',
+        copy: 'FIND OUT EVEN MORE WITH THESE DK BOOKS'
+      }
+    ],
+    menuLinks: [
+      {
+        name: 'Kids Club',
+        url: 'kids-club'
+      },
+      {
+        name: 'Parents',
+        url: 'parents'
+      },
+      {
+        name: 'Teachers',
+        url: 'teachers'
+      },
+      {
+        name: 'News',
+        url: 'news'
+      }
+    ]
+  }
+];
